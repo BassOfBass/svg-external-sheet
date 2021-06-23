@@ -1,0 +1,8 @@
+@use "styles";
+@use "assets/svg-sprites";
+@use "components";
+@use "pages";
+
+*[hidden] {
+  display: none !important;
+}

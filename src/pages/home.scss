@@ -1,0 +1,10 @@
+.icon-list {
+  display: flex;
+  flex-flow: row wrap;
+
+  & > * {
+    flex: 0 1 5em;
+    margin: 0.5em;
+    max-height: 4em;
+  }
+}

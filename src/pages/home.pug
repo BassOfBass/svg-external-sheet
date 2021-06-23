@@ -1,0 +1,18 @@
+extends /layout.pug
+
+block title
+  title Stylable external svg elements
+
+block content
+  header
+    h1 Stylable external svg elements
+
+  section
+    - let number = 0;
+    - let icon = true;
+    div.icon-list
+      while number < 40
+        - const name = icon ? "address-book" : "address-card";
+        +svgIcon(name, `--local-color: hsl(${number * 9}, 100%, 50%)`)
+        - icon = !icon
+        - number++

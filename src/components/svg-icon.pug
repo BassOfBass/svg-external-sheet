@@ -1,0 +1,7 @@
+mixin svgIcon(id, styleString=null)
+  span.svg-icon
+    svg.svg-icon__svg
+      use.svg-icon__use(
+        href= `${require("@/assets/svg-sprites/_index.svg")}#svg-icon--${id}`
+        style= styleString && `${styleString}`
+      )

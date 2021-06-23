@@ -1,0 +1,29 @@
+html {
+  height: 100%;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  min-height: 100%;
+
+  & > * {
+    flex: 0 1 auto;
+    padding: 0.5em 2em;
+  }
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 0.25em;
+  margin: 0;
+}
